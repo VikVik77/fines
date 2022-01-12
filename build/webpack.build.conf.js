@@ -1,12 +1,8 @@
-/* Build config:
-  ========================================================================== */
-
-// Source: https://github.com/survivejs/webpack-merge
-const { merge } = require('webpack-merge')
-// Base config
+const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 
 const buildWebpackConfig = merge(baseWebpackConfig, {
+  // BUILD config
   mode: 'production',
   plugins: []
 })

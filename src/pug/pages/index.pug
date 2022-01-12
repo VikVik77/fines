@@ -1,0 +1,35 @@
+extends ../layout/layout
+
+block variables
+  - var title = 'omr-molod';
+  - var description = 'Index Page';
+  - var pageClass = 'index-page';
+
+block content
+  section.welcome
+    .wrap
+      .title_wrap
+        img(src="././assets/img/mrada-vector.svg" alt="Логотип Молодежного совета")
+        .text
+          h1.logo-main-txt Молодіжна рада
+          span.logo-other-txt при Одеському міському голові
+        img(src="././assets/img/logo.png" alt="Логотип, герб Одеси")
+      .buttons_wrap   
+        a(href="/events-page.html").button_type-one Календарь событий
+        a(href="/voting-page.html").button_type-one.mod Выборы
+      .win-of-candidate
+        .candidate-photo_wrap
+          img(src="././assets/img/shef.png" alt="Фото кандидата в молодежный совет")
+        .text-welcome_wrap
+          h2 Lorem ipsum dolor sit amet 
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            |Tempore quam, distinctio quia ab officia ut facere autem repellendus ullam possimus corporis provident odio! 
+            |Reprehenderit tempore cumque unde necessitatibus nisi ab.Architecto corrupti quos deleniti assumenda accusantium 
+            |dolores voluptatem rerum officia ducimus odio temporibus, eligendi laborum molestiae modi molestias eius, exercitationem
+            |eos voluptates. Dolores corporis fugit vitae quae corrupti ex eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            |Tempore quam, distinctio quia ab officia ut facere autem repellendus ullam possimus corporis provident odio! Reprehenderit tempore cumque 
+            |unde necessitatibus nisi ab.Architecto corrupti quos deleniti assumenda accusantium dolores voluptatem rerum officia ducimus odio temporibus, 
+            |eligendi laborum molestiae modi molestias eius, exercitationem eos voluptates. Dolores corporis fugit vitae quae corrupti ex eaque?
+  
+  
+  
