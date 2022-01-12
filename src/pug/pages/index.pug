@@ -1,35 +1,98 @@
 extends ../layout/layout
 
 block variables
-  - var title = 'omr-molod';
+  - var title = 'Одеська міська рада';
   - var description = 'Index Page';
   - var pageClass = 'index-page';
 
 block content
-  section.welcome
-    .wrap
-      .title_wrap
-        img(src="././assets/img/mrada-vector.svg" alt="Логотип Молодежного совета")
-        .text
-          h1.logo-main-txt Молодіжна рада
-          span.logo-other-txt при Одеському міському голові
-        img(src="././assets/img/logo.png" alt="Логотип, герб Одеси")
-      .buttons_wrap   
-        a(href="/events-page.html").button_type-one Календарь событий
-        a(href="/voting-page.html").button_type-one.mod Выборы
-      .win-of-candidate
-        .candidate-photo_wrap
-          img(src="././assets/img/shef.png" alt="Фото кандидата в молодежный совет")
-        .text-welcome_wrap
-          h2 Lorem ipsum dolor sit amet 
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            |Tempore quam, distinctio quia ab officia ut facere autem repellendus ullam possimus corporis provident odio! 
-            |Reprehenderit tempore cumque unde necessitatibus nisi ab.Architecto corrupti quos deleniti assumenda accusantium 
-            |dolores voluptatem rerum officia ducimus odio temporibus, eligendi laborum molestiae modi molestias eius, exercitationem
-            |eos voluptates. Dolores corporis fugit vitae quae corrupti ex eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            |Tempore quam, distinctio quia ab officia ut facere autem repellendus ullam possimus corporis provident odio! Reprehenderit tempore cumque 
-            |unde necessitatibus nisi ab.Architecto corrupti quos deleniti assumenda accusantium dolores voluptatem rerum officia ducimus odio temporibus, 
-            |eligendi laborum molestiae modi molestias eius, exercitationem eos voluptates. Dolores corporis fugit vitae quae corrupti ex eaque?
+  section.banner
+    .container 
+      .banner__inner
+        .banner__logo 
+          a(href="https://omr.gov.ua/" target="_blank").banner__logo-img
+            img(src="/assets/img/logo_omr.svg", alt="Герб Одеси")
+        .banner__inf 
+          h2.banner__inf-text Одеська міська рада 
+          h1.banner__inf-text-main Перевірка порушень правил зупинки та стоянки
+
+  section.block-forms
+    .container 
+      .block-forms__inner 
+        .block-forms__fines
+          .block-forms__fines-logo
+            //img(src="/assets/img/police-fine-50.png", alt="Іконка Штраф")
+            a(href="") 
+              img(src="/assets/img/car-document.svg", alt="Іконка Штраф")
+          .block-forms__fines-enter-data
+            form(action="")
+              span.block-forms__fines-inf-txt-attention УВАГА!!!
+              p.block-forms__fines-inf-txt 
+                |Реквізити для сплати штрафу по постановам та
+                |повідомленням винесеним інспекторами з
+                |паркування департаменту транспорту, зв’язку та
+                |організації дорожнього руху Одеської міської ради
+              span.block-forms__fines-inf-txt-attention-sec Рахунок діє з 01.01.2021р.
+
+              h3.block-forms__fines-title Перевірка порушень правил зупинки
+              
+              .block-forms__car-number
+                label(for="").block-forms__fines-label-car-number Введіть номер автомобіля
+                input(
+                  type="text"
+                  name="car number"
+                  placeholder="Введіть номер автомобіля"
+                ).block-forms__fines-enter-data-car-number
+
+              .block-forms__decree-number
+                label(for="").block-forms__fines-label-decree-number Введіть номер постанови ОД-
+                input(
+                  type="text"
+                  name="car number"
+                  placeholder="Введіть номер постанови"
+                ).block-forms__fines-enter-data-decree-number
+
+              .block-forms__fines-recaptcha
+
+
+        .block-forms__parking
+          .block-forms__parking-logo
+            //img(src="/assets/img/tow-truck-64.png", alt="Іконка Евакуатор")
+            a(href="") 
+              img(src="/assets/img/tow-truck-100.png", alt="Іконка Евакуатор")
+          .block-forms__parking-enter-data
+            form(action="")
+              span.block-forms__parking-inf-txt-attention УВАГА!!!
+              p.block-forms__parking-inf-txt 
+                |Реквізити для сплати штрафу по постановам та
+                |повідомленням винесеним інспекторами з
+                |паркування департаменту транспорту, зв’язку та
+                |організації дорожнього руху Одеської міської ради
+              span.block-forms__parking-inf-txt-attention-sec Рахунок діє з 01.01.2021р.
+
+              h3.block-forms__parking-title Перевірка порушень правил стоянки
+              
+              .block-forms__car-number
+                label(for="").block-forms__parking-label-car-number Введіть номер автомобіля
+                input(
+                  type="text"
+                  name="car number"
+                  placeholder="Введіть номер автомобіля"
+                ).block-forms__parking-enter-data-car-number
+
+              .block-forms__decree-number
+                label(for="").block-forms__parking-label-decree-number Введіть номер постанови ОД-
+                input(
+                  type="text"
+                  name="car number"
+                  placeholder="Введіть номер постанови"
+                ).block-forms__parking-enter-data-decree-number
+
+              .block-forms__parking-recaptcha
+
+  section.requisites
+
+
   
   
   

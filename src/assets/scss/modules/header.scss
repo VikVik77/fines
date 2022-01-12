@@ -1,0 +1,25 @@
+.header {
+    background: $dark-red-omr;
+    &__inner {
+    }
+    &__nav {
+        display: flex;
+        padding: 15px 0;
+    }
+    &__nav-link {
+        color: $white-color;
+        margin: 0 30px;
+        position: relative;
+        &:hover {
+            &::after {
+                position: absolute;
+                content: "";
+                width: 102%;
+                height: 2px;
+                background: $white-color;
+                top: 22px;
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+.banner {
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__logo {
+        max-width: 100px;
+    }
+
+    &__inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    &__inf-text {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    &__inf-text-main {
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+
+.block-forms {
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    &__fines {
+        display: block;
+        background: $light-gray-omr;
+        width: 43%;
+        padding: 25px 20px;
+        &:hover, &:active {
+            box-shadow: 1px 2px 11px 2px $midle-gray-omr;
+            transform: translateY(-2px);
+        }
+    }
+    &__fines-logo {
+        margin: 20px auto;
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    &__fines-enter-data {
+        display: block;
+    }
+
+    &__fines-inf-txt-attention {
+        font-weight: bold;
+        font-size: 15px;    
+        line-height: 1.3;
+    }
+    &__fines-inf-txt {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    &__fines-inf-txt-attention-sec {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    &__fines-title {
+        padding: 25px 0;
+        margin: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__car-number, &__decree-number {
+        //padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    &__fines-label-car-number, &__fines-label-decree-number {    
+        display: block;
+        color: $dark-green;    
+        padding-left: 5px;
+        padding-bottom: 2px;
+        font-size: 15px;
+    }
+
+    &__fines-enter-data-car-number, &__fines-enter-data-decree-number {
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        border: 1px solid $light-color;
+        &::placeholder {
+            color: $light-color;
+        }
+        
+    }
+
+    &__fines-recaptcha {
+        display: block;
+        border: 1px solid #000;
+        width: 100%;
+        //width: 304px;
+        height: 78px;
+    }
+
+
+
+    &__parking {
+        display: block;
+        background: $light-gray-omr;
+        width: 45%;
+        padding: 25px 20px;
+        &:hover, &:active {
+            box-shadow: 1px 2px 11px 2px $midle-gray-omr;
+        }
+    }
+    &__parking-logo {
+        margin: 20px auto;
+        width: 150px;
+        margin-bottom: 30px;
+        transform: scale(1.1);
+    }
+
+    &__parking-inf-txt-attention {
+        font-weight: bold;
+        font-size: 15px;    
+        line-height: 1.3;
+    }
+    &__parking-inf-txt {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    &__parking-inf-txt-attention-sec {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    &__parking-title {
+        padding: 25px 0;
+        margin: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__car-number, &__decree-number {
+        //padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    &__parking-label-car-number, &__parking-label-decree-number {    
+        display: block;
+        color: $dark-green;    
+        padding-left: 5px;
+        padding-bottom: 2px;
+        font-size: 15px;
+    }
+
+    &__parking-enter-data-car-number, &__parking-enter-data-decree-number {
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        border: 1px solid $light-color;
+        &::placeholder {
+            color: $light-color;
+        }
+        
+    }
+
+    &__parking-recaptcha {
+        display: block;
+        border: 1px solid #000;
+        width: 100%;
+        //width: 304px;
+        height: 78px;
+    }
+}
+
+.view {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .block-forms {
+        &__fines, &__parking {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .block-forms {
+        &__fines-enter-data, &__parking-enter-data {
+            display: none;
+        }
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__fines, &__parking {
+            width: 90%;
+            margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .block-forms {
+        &__fines, &__parking {
+            display: block;
+            width: 100%;
+        }
+    }
+}
