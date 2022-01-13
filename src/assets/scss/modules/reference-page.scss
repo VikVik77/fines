@@ -1,0 +1,78 @@
+.reference {
+
+    &__inner {
+        padding: 40px 0;
+    }
+    &__title {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__block-inf  {
+        padding: 50px 0;
+    }
+    &__block-inf-name-dep {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+     &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    &__block-inf-mail-dep-txt, &__block-inf-phone-dep-txt {
+        font-size: 22px;
+        line-height: 1.5;
+        color: $black-color;
+        &:hover {
+            //font-weight: bold;
+            border-bottom: 1px solid $black-color;
+        }
+        
+    }
+
+    &__block-inf-map  {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .contact-form {
+        &__inner {
+            padding-top: 80px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__block-inf-name-dep {
+            font-size: 18px;
+        }
+        &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 484px) {
+    .reference {
+        &__inner {
+            padding-top: 80px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__block-inf {
+            padding: 30px 0;
+        }
+       
+        &__block-inf-name-dep {
+            font-size: 15px;
+        }
+        &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+            font-size: 12px;
+        }
+    }
+    
+}

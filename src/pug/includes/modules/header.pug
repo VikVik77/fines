@@ -1,12 +1,17 @@
 header
     .header 
         .container
-            .header__inner  
-                nav.header__nav 
-                    li
-                        a(href="/").header__nav-link Головна
-                    li
-                        a(href="/events-page.html").header__nav-link Контактна форма
-                    li 
-                        a(href="/info-photo-page.html").header__nav-link Довідка 
-                
+            .header__inner
+                button(type="button").hamburger.hamburger--slider
+                    span.hamburger-box
+                    span.hamburger-inner
+                .header__nav
+                    nav
+                        ul.header__nav-list 
+                            li
+                                a(href="/").header__nav-link Головна
+                            li
+                                a(href="/contact-form-page.html").header__nav-link Контактна форма
+                            li 
+                                a(href="/reference-page.html").header__nav-link Довідка 
+                    

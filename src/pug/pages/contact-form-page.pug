@@ -1,0 +1,58 @@
+extends ../layout/layout
+
+block variables
+  - var title = 'Одеська міська рада';
+  - var description = 'Contact Form Page';
+  - var pageClass = 'contact-form-page';
+
+block content
+  section.contact-form
+    .container 
+      .contact-form__inner
+        h2.contact-form__title Контакти
+
+        .contact-form__block-inf 
+          p.contact-form__block-inf-name-dep Департамент транспорту, зв’язку та організації дорожнього руху Одеської міської ради
+          p.contact-form__block-inf-address-dep м. Одеса, вул. Б. Хмельницького, 18
+          p.contact-form__block-inf-mail-dep E-mail: dtks@omr.gov.ua 
+          p.contact-form__block-inf-phone-dep Диспетчер (з 7:00 до 19:00): 705-98-00 
+        
+        .contact-form__block-form
+          form(action="")
+            .contact-form__block-form-title Залишити повідомлення
+            .contact-form__block-form-enter-date
+              .contact-form__block-form-name
+                label(for="").contact-form__block-form-label-name ПІБ:
+                input(
+                  type="text"
+                  name="name"
+                  placeholder="ПІБ"
+                ).contact-form__block-form-enter-data-name
+
+              .contact-form__block-form-mail
+                label(for="").contact-form__block-form-label-mail E-mail:
+                input(
+                  type="email"
+                  name="name"
+                  placeholder="E-mail"
+                ).contact-form__block-form-enter-data-mail 
+
+              .contact-form__block-form-phone
+                label(for="").contact-form__block-form-label-phone Телефон:
+                input(
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                ).contact-form__block-form-enter-data-phone 
+
+              .contact-form__block-form-message
+                label(for="").contact-form__block-form-label-message Повідомлення:
+                textarea(
+                  cols="30" 
+                  rows="10"
+                  type="text"
+                  name="message"
+                  placeholder="Повідомлення"
+                ).contact-form__block-form-enter-data-message 
+
+            button(type="submit").contact-form__block-form-btn Залишити повідомлення

@@ -6,6 +6,9 @@
 @import "modules/header";
 @import "modules/footer";
 @import "modules/index";
+@import "modules/hamburgerMenu";
+@import "modules/reference-page";
+@import "modules/contact-form-page";
 
 html {
   line-height: $mainLineHeight;
@@ -84,8 +87,8 @@ section, .section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vh;
+  // min-height: 100vh;
+  // min-width: 100vh;
 }
 
 .content-wrapper {

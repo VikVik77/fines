@@ -1,0 +1,157 @@
+.contact-form {
+
+    &__inner {
+        padding: 40px 0;
+    }
+    &__title {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__block-inf  {
+        padding: 50px 0;
+    }
+    &__block-inf-name-dep {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+     &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    &__block-form {
+        width: 100%;
+        background: $light-gray-omr;
+        padding: 45px 30px;
+    }
+    &__block-form-title {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__block-form-enter-date {
+        display: flex;
+        flex-direction: column;
+    }
+    &__block-form-name, &__block-form-mail, &__block-form-phone, &__block-form-message {
+        
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    &__block-form-label-name, &__block-form-label-mail, &__block-form-label-phone, &__block-form-label-message {    
+        display: block;
+        color: $dark-green;    
+        padding-left: 5px;
+        padding-bottom: 2px;
+        font-size: 18px;
+    }
+
+    &__block-form-enter-data-name, &__block-form-enter-data-mail, &__block-form-enter-data-phone, &__block-form-enter-data-message {
+        padding: 10px;
+        font-size: 20px;
+        width: 100%;
+        border: 1px solid $light-color;
+        &::placeholder {
+            color: $light-color;
+        }
+        
+    }
+
+
+    &__block-form-btn {
+        display: block;
+        background: $yellow-omr;
+        padding: 15px 25px;
+        border-radius: 10px;
+        color: $white-color;
+        text-transform: uppercase;
+        margin: 15px auto;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover {
+            background: $blue-omr;
+        }
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .contact-form {
+        &__inner {
+            padding-top: 80px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__block-inf-name-dep {
+            font-size: 18px;
+        }
+        &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+            font-size: 16px;
+        }
+
+        &__block-form-title {
+            font-size: 21px;
+        }
+
+        &__block-form-label-name, &__block-form-label-mail, &__block-form-label-phone, &__block-form-label-message {    
+            font-size: 15px;
+        }
+    
+        &__block-form-enter-data-name, &__block-form-enter-data-mail, &__block-form-enter-data-phone, &__block-form-enter-data-message {
+            font-size: 17px;
+        }
+
+        &__block-form-btn {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 484px) {
+    .contact-form {
+        &__inner {
+            padding-top: 80px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__block-inf {
+            padding: 30px 0;
+        }
+        &__block-form {
+            padding: 30px 20px;
+        }
+        &__block-inf-name-dep {
+            font-size: 15px;
+        }
+        &__block-inf-address-dep, &__block-inf-mail-dep, &__block-inf-phone-dep {
+            font-size: 12px;
+        }
+
+        &__block-form-title {
+            font-size: 17px;
+        }
+
+        &__block-form-label-name, &__block-form-label-mail, &__block-form-label-phone, &__block-form-label-message {    
+            font-size: 12px;
+        }
+    
+        &__block-form-enter-data-name, &__block-form-enter-data-mail, &__block-form-enter-data-phone, &__block-form-enter-data-message {
+            font-size: 14px;
+        }
+
+        &__block-form-btn {
+            font-size: 14px;
+        }
+    }
+    
+}

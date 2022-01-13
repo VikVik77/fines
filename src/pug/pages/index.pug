@@ -22,7 +22,7 @@ block content
         .block-forms__fines
           .block-forms__fines-logo
             //img(src="/assets/img/police-fine-50.png", alt="Іконка Штраф")
-            a(href="") 
+            a.block-forms__btn-fines
               img(src="/assets/img/car-document.svg", alt="Іконка Штраф")
           .block-forms__fines-enter-data
             form(action="")
@@ -53,12 +53,13 @@ block content
                 ).block-forms__fines-enter-data-decree-number
 
               .block-forms__fines-recaptcha
+              button(type="submit").block-forms__fines-btn Перевірити
 
 
         .block-forms__parking
           .block-forms__parking-logo
             //img(src="/assets/img/tow-truck-64.png", alt="Іконка Евакуатор")
-            a(href="") 
+            a.block-forms__btn-parking 
               img(src="/assets/img/tow-truck-100.png", alt="Іконка Евакуатор")
           .block-forms__parking-enter-data
             form(action="")
@@ -83,14 +84,40 @@ block content
               .block-forms__decree-number
                 label(for="").block-forms__parking-label-decree-number Введіть номер постанови ОД-
                 input(
-                  type="text"
+                  type="number"
                   name="car number"
                   placeholder="Введіть номер постанови"
                 ).block-forms__parking-enter-data-decree-number
 
               .block-forms__parking-recaptcha
+              button(type="submit").block-forms__parking-btn Перевірити
 
   section.requisites
+    .container 
+      h2.requisites__title Реквізити
+      .requisites__inf
+        .requisites__inf-bank
+          span.requisites__inf-bank-subtitle Банк отримувача 
+          p.requisites__inf-bank-txt – Казначейство України (ЕАП),
+        .requisites__inf-bank-code 
+          span.requisites__inf-bank-code-subtitle Код банку (МФО) 
+          p.requisites__inf-bank-code-txt  – 899998,
+        .requisites__inf-recipient 
+          span.requisites__inf-recipient-subtitle Отримувач 
+          p.requisites__inf-recipient-txt  – ГУДКСУ в Одеській області,
+        .requisites__inf-recipient-code
+          span.requisites__inf-recipient-code-subtitle Код отримувача (ЄДРПОУ) 
+          p.requisites__inf-recipient-code-txt  – 37607526,       
+        .requisites__inf-account-number
+          span.requisites__inf-account-number-subtitle Номер рахунку 
+          p.requisites__inf-account-number-txt  – UA888999980314040542000015744,
+        .requisites__inf-kbk 
+          span.requisites__inf-kbk-subtitle КБК  
+          p.requisites__inf-kbk-txt  – 21081100 «Адміністративні штрафи та інші санкції»
+        .requisites__inf-purpose-of-payment
+          span.requisites__inf-purpose-of-payment-subtitle Призначення платежу: 
+          p.requisites__inf-purpose-of-payment-txt  «обов’язково вказати серію та номер постанови або повідомлення»
+
 
 
   

@@ -1,4 +1,7 @@
-// Main js file
-// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+import {mainFormFines} from "./utils/mainFormFines";
+import {hamburgerMenu} from "./utils/hamburgerMenu";
 
-console.log('its work')
+document.addEventListener('DOMContentLoaded', function() {
+	mainFormFines();
+    hamburgerMenu();
+})
