@@ -119,5 +119,36 @@ section, .section {
   // }
 }
 
+ul.breadcrumb {
+  padding: 0px 20px;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: $blue-omr;
+  text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  color: $blue-omr;
+  text-decoration: underline;
+}
+
 // Modules:
 // example: @import "modules/my-module.scss";
