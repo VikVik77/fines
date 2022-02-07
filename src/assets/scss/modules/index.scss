@@ -36,15 +36,21 @@
         background: $light-gray-omr;
         width: 43%;
         padding: 25px 20px;
+        cursor: pointer;
         &:hover, &:active {
             box-shadow: 1px 2px 11px 2px $midle-gray-omr;
-            transform: translateY(-2px);
+            //transform: translateY(-2px);
         }
     }
     &__fines-logo {
-        margin: 20px auto;
-        width: 150px;
+        margin: 0 auto;
+        width: 100%;
         margin-bottom: 30px;
+        text-align: center;
+    }
+    &__btn-fines-img {
+        width: 170px;
+        margin: 25px 0;
     }
 
     &__fines-enter-data {
@@ -92,7 +98,7 @@
 
     &__fines-enter-data-car-number, &__fines-enter-data-decree-number {
         padding: 10px;
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
         border: 1px solid $light-color;
         &::placeholder {
@@ -132,17 +138,20 @@
         background: $light-gray-omr;
         width: 45%;
         padding: 25px 20px;
+        cursor: pointer;
         &:hover, &:active {
             box-shadow: 1px 2px 11px 2px $midle-gray-omr;
-            transform: translateY(-2px);
+            //transform: translateY(-2px);
         }
     }
     &__parking-logo {
-        margin: 20px auto;
-        width: 150px;
+        margin: 0px auto;
+        width: 100%;
         margin-bottom: 30px;
-        transform: scale(1.1);
         text-align: center;
+    }
+    &__btn-parking-img {
+        width: 170px;
     }
 
     &__parking-inf-txt-attention {
@@ -173,7 +182,7 @@
         //padding-top: 25px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin: 15px 0;
     }
 
     &__parking-label-car-number, &__parking-label-decree-number {    
